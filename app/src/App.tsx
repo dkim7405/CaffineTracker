@@ -6,7 +6,7 @@ function App() {
 		<>
 			<div className="flex flex-row w-full h-full">
 				<NavBar />
-				<LiquidFillGauge caffeineIntake={200} chartMax={400} />
+				<LiquidFillGauge caffeineIntake={200} safetyLimit={400} />
 			</div>
 		</>
 	);

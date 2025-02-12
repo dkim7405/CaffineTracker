@@ -13,14 +13,7 @@ function NavBar() {
     ];
 
     return (
-        <div className="w-64 h-screen bg-white p-4 flex flex-col shadow-2xl z-50">
-            {/* Header */}
-            <div className="flex items-center space-x-2 mb-6">
-                <h1 className="text-lg font-medium text-gray-500">
-                    Good Morning, Leo
-                </h1>
-            </div>
-
+        <div className="w-3xs h-screen bg-white p-4 flex flex-col shadow-2xl z-50">
             {/* Toggle Buttons */}
             <div className="flex bg-gray-100 p-1 rounded-lg mb-6">
                 <button
@@ -61,6 +54,6 @@ function NavBar() {
             </nav>
         </div>
     );
-};
+}
 
 export default NavBar;
