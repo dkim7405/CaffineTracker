@@ -1,8 +1,5 @@
-/* eslint-disable no-unused-vars */
-
-const caffeineMgPerKg = 5;
-// 5 / 2.2 = 2.27
-const caffeineMgPerLb = 2.27;
+const CAFFEINE_MG_PER_KG = 5;
+const LBS_PER_KG = 2.20462;
 
 class UserInfoManager {
 
@@ -16,7 +13,8 @@ class UserInfoManager {
     }
 
     getSafetyLimitLB() {
-        let accurateSafeLimit = this.bodyWeightLB * caffeineMgPerLb;
+        let caffeineMgPerLB = CAFFEINE_MG_PER_KG / LBS_PER_KG;
+        let accurateSafeLimit = caffeineMgPerLB * this.bodyWeightLB;
         return Math.round(accurateSafeLimit);
     }
 
