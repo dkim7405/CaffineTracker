@@ -75,7 +75,7 @@ function GaugeChart({ caffeineIntake, safetyLimit }) {
 
     const renderIntake = () => (
         <div
-            className="absolute right-10 flex items-center justify-end transition-all text-white duration-500"
+            className="absolute right-30 flex items-center justify-end transition-all text-white duration-500"
             style={{
                 top: `${100 - percentage}%`,
                 transform: 'translateY(100%)',
